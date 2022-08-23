@@ -1,0 +1,131 @@
+.about-wine {
+    height: auto;
+    padding: 9%;
+    padding-bottom: 6%;
+}
+
+.about-wine img {
+    max-width: 50%;
+    height: auto;
+}
+
+.about-wine h1 {
+    font-size: 6rem;
+    font-weight: 300;
+    color: #cf2e2e;
+    text-align: center;
+    margin: 2rem;
+    /* margin: 0 auto; */
+    margin-top: -3rem;
+    z-index: 1;
+    /* position: relative; */
+    /* left: 100px; */
+}
+
+.about-wine p {
+    position: relative;
+    left: -150px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 0 auto;
+    text-align: left;
+    width: 60%;
+    padding: 0 4rem;
+}
+
+.about-wine button {
+    padding: 1em;
+    margin-right: auto;
+    margin-top: 1rem;
+    background-color: transparent;
+    border: #cf2e2e solid 1px;
+    font-size: 1rem;
+    color: #cf2e2e;
+    transition: 0.5s;
+    cursor: pointer;
+    display: block;
+    transition: 0.5s;
+    /* margin: 0 auto; */
+    position: relative;
+    left: 125px;
+}
+
+.about-wine button:hover {
+    background-color: #cf2e2e;
+    color: white;
+}
+
+.about-wine a {
+    text-decoration: none;
+}
+
+.about-img-two {
+    position: relative;
+    left: -5%;
+    top: -15%;
+    width: 70%;
+
+}
+
+.about-img-three {
+    width: 30%;
+    position: relative;
+    right: -15%;
+    top: -150px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .about-wine {
+        margin-top: 4rem;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        /* align-items: flex-start; */
+        
+    }
+
+    .about-wine h1 {
+        font-size: 2.5rem;
+        margin: auto;
+        margin-top: -1rem;
+        /* margin-right: auto; */
+    }
+
+    .about-wine p {
+        position: static;
+        left: 0;
+        padding: 0;
+        margin: auto;
+    }
+
+    .about-wine img {
+        max-width: none;
+        height: auto;
+    }
+
+    .about-img-one {
+        width: 70%;
+    }
+
+    .about-img-two {
+        width: 60%;
+        position: static;
+        margin-top: 1rem;
+        margin-left: auto;
+    }
+
+    .about-img-three {
+        display: none;
+    }
+
+    .about-wine button {
+        position: static;
+        left: 0;
+        padding: 0.5em;
+        text-align: center;
+        margin: auto;
+        margin-top: 1rem;
+    }
+
+}

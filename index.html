@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../the-good-winery-logo.png" type="image/jpg">
+
+
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../src/main.css">
+  <link rel="stylesheet" href="../src/hero.css">
+  <link rel="stylesheet" href="../src/about-wine.css">
+  <link rel="stylesheet" href="../src/history.css">
+  <link rel="stylesheet" href="../src/products.css">
+  <link rel="stylesheet" href="../src/tasting.css">
+  <link rel="stylesheet" href="../src/contact.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Scripts -->
+  <script src="https://kit.fontawesome.com/cb16d461ff.js" crossorigin="anonymous"></script>
+  <script src="src/index.js" defer></script>
+  <script src="src/homepage-bg.js" defer></script>
+  <title>The Good Winery</title>
+</head>
+
+
+
+<body>
+  <div id="loader">
+
+  </div>
+
+
+
+  <div id="content">
+    <nav id="hidden-nav">
+
+      <div class="nav-links">
+        <a href="index.html">HOME</a>
+        <a href="history.html">OUR HISTORY</a>
+        <a href="shop.html">SHOP</a>
+      </div>
+
+    </nav>
+
+    <header>
+
+      <div class="menu-icons">
+        <img class="hamburger-button" src="../images/icons/icons8-menu.svg" onclick="openNav()" alt="">
+
+        <img class="close-button" src="../images/icons/icons8-close.svg" onclick="closeNav()" alt="">
+      </div>
+
+      <a href="index.html" class="brand-logo"><img src="../images/the-good-winery-logo.png" alt=""></a>
+
+      <div class="cart-div">
+        <a href="cart.html">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span>0</span>
+        </a>
+      </div>
+    </header>
+
+    <section class="hero-section">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1>Welcome to Wine Country</h1>
+          <p>The most excellent collections of reds, whites and everything in between.<br>Only for your
+            happiness.
+          </p>
+        </div>
+        <div class="hero-action">
+          <button><span>DISCOVER MORE </span></button>
+        </div>
+      </div>
+
+    </section>
+
+
+
+    <!-- Change section view height from 100vh cos of big screens -->
+    <section class="about-wine">
+      <img class="about-img-one" src="../images/california-vineyards-santa-barbara-min.jpg" alt="">
+      <h1>OUR HISTORY</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore rem impedit sequi temporibus magni,
+        earum quibusdam laudantium, praesentium quidem optio non esse accusantium deleniti totam consectetur
+        sit.</p>
+      <a href="history.html"><button>READ MORE</button></a>
+
+      <img class="about-img-two" src="../images/closeup-grapes-tree-vineyard-sunlight-malta-min.jpg" alt="">
+      <img class="about-img-three" src="../images/history-image-5.png" alt="">
+
+    </section>
+
+    <section class="products-section">
+      <div class="products-heading">
+        <h1>Discover Our Wines</h1>
+      </div>
+
+      <div class="catalog">
+        <!-- Tablinks -->
+        <div class="tab">
+          <button class="tablinks" data-for-tab="1">Whites</button>
+          <button class="tablinks button--active" data-for-tab="2">Our Bestsellers</button>
+          <button class="tablinks" data-for-tab="3">Reds</button>
+        </div>
+
+        <!-- Whites Tab -->
+        <div class="tab-content" data-tab="1">
+          <div class="product-card">
+            <div class="product-card-image">
+              <p>SALE</p>
+              <img src="../images/chardonnay.png" alt="">
+            </div>
+            <div class="product-card-info">
+
+              <h3>2016 Sauvignon Blanc</h3>
+              <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, fugit
+                consectetur.</span>
+              <p>$65</p>
+              <button id="home-add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card-image">
+              <p>SALE</p>
+              <img src="../images/chardonnay.png" alt="">
+            </div>
+            <div class="product-card-info">
+
+              <h3>2016 Sauvignon Blanc</h3>
+              <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, fugit
+                consectetur.</span>
+              <p>$65</p>
+              <button id="home-add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card-image">
+              <p>SALE</p>
+              <img src="../images/chardonnay.png" alt="">
+            </div>
+            <div class="product-card-info">
+
+              <h3>2016 Sauvignon Blanc</h3>
+              <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, fugit
+                consectetur.</span>
+              <p>$65</p>
+              <button id="home-add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bestsellers Tab -->
+        <div class="tab-content tab-content--active" data-tab="2">
+          <div class="product-card">
+            <div class="product-card-image">
+
+              <img src="../images/chardonnay.png" alt="">
+            </div>
+            <div class="product-card-info">
+
+              <h3>2016 Sauvignon Blanc</h3>
+              <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, fugit
+                consectetur.</span>
+              <p>$65</p>
+              <button id="home-add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+
+            <div class="product-card-image">
+
+              <img src="../images/merlot.png" alt="">
+            </div>
+            <div class="product-card-info">
+
+              <h3>Oak Grove Merlot</h3>
+              <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, fugit
+                consectetur.</span>
+              <p>$65</p>
+              <button id="home-add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card-image">
+
+              <img src="../images/rose.png" alt="">
+            </div>
+            <div class="product-card-info">
+
+              <h3> Franc Rosé</h3>
+              <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, fugit
+                consectetur.</span>
+              <p>$65</p>
+              <button id="home-add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Reds Tab -->
+        <div class="tab-content" data-tab="3">
+          <div class="product-card">
+            <div class="product-card-image">
+              <p></p>
+              <img src="../images/red.png" alt="">
+            </div>
+            <div class="product-card-info">
+
+              <h3>Oak Grove Merlot</h3>
+              <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, fugit
+                consectetur.</span>
+              <p>$65</p>
+              <button id="home-add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card-image">
+              <p>NEW</p>
+              <img src="../images/red-2.png" alt="">
+            </div>
+            <div class="product-card-info">
+
+              <h3>2019 Pinot Noir</h3>
+              <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, fugit
+                consectetur.</span>
+              <p>$65</p>
+              <button id="home-add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card-image">
+              <p> </p>
+              <img src="../images/red-3.png" alt="">
+            </div>
+            <div class="product-card-info">
+
+              <h3>Carbanet Franc</h3>
+              <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, fugit
+                consectetur.</span>
+              <p>$65</p>
+              <button id="home-add-to-cart">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- There should be a see more for each of the tabs -->
+    </section>
+
+    <section class="contact-section">
+      <h1>CONTACT US</h1>
+      <div class="contact-content">
+        <div class="contact-form">
+          <form>
+            <div class="form-group">
+
+              <input type="text" class="form-control" id="name" placeholder="Name">
+            </div>
+            <div class="form-group">
+
+              <input type="email" class="form-control" id="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+
+              <textarea class="form-control" id="message" rows="3" placeholder="Talk to us"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+
+
+        </div>
+
+        <div class="map">
+          <p>
+            <a href="tel:+234-844-844-8444">+234-806-844-8444</a>
+          </p>
+          <p>
+            <a href="mailto:" ataladeogo@gmail.com">ataladeogo@gmail.com</a>
+          </p>
+
+          <p class="address">
+            Ahmadu Bello Way, Victoria Island 106104, Lagos
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.7119688286007!2d3.406693149883659!3d6.431034995324346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8ad3cab07231%3A0xa73b0822265dc43!2sAhmadu%20Bello%20Way%2C%20Eti-Osa%20106104%2C%20Lagos!5e0!3m2!1sen!2sng!4v1658030509572!5m2!1sen!2sng"
+            width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+
+    <footer>
+      <div class="footer-content">
+        <div class="logo">
+          <img src="../images/the-good-winery-logo.png" alt="">
+        </div>
+
+        <div class="links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">Our History</a></li>
+            <li><a href="shop.html">Shop</a></li>
+          </ul>
+        </div>
+
+        <div class="social">
+          <ul>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>Copyright &copy; 2022 All rights reserved | Made with <i class="fas fa-heart"></i> by Taladeogo</p>
+      </div>
+    </footer>
+  </div>
+
+
+
+</body>
+
+</html>

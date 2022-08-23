@@ -1,0 +1,84 @@
+.tasting-section {
+    display: flex;
+    border: solid 2px white;
+   
+    margin: 6rem 10%;
+    margin-left: 16%; 
+    color: white;
+    height: auto;
+}
+
+.tasting-form-wrapper {
+    margin: 0 auto;
+}
+
+.tasting-form-wrapper h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+  
+    margin-top: .5rem;
+    text-align: center;
+
+}
+
+.tasting-section form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+form div {
+    margin: 0;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+
+
+/* label, input {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+input, select {
+    border: none;
+    border-bottom: solid black 1px;
+    width: 350px;
+    font-size: 18px;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-bottom: solid black 2px;
+    width: 350px;
+}
+
+
+button {
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+} */
+
+input[type=submit] {
+    padding: 1.2em;
+    margin: 1rem 0;
+    background-color: white;
+    color: black;
+    /* font-size: 20px; */
+}

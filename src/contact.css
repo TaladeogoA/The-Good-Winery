@@ -1,0 +1,136 @@
+.contact-section {
+    margin-left: 8%;
+    margin-top: 4rem;
+    padding: 5%;
+}
+
+.contact-section h1 {
+    font-size: 4rem;
+    font-weight: 300;
+    color: #cf2e2e;
+    text-align: center;
+    margin: 2rem;
+    /* margin: 0 auto; */
+   
+}
+
+.contact-content {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 5rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.form-group input {
+    border: none;
+    border-bottom: solid 1px #cf2e2e;
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-right: 1rem;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-bottom: solid #cf2e2e 2px;
+}
+
+.form-group textarea {
+    border: none;
+    border-bottom: solid 1px #cf2e2e;
+    width: 120%;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.form-group textarea:focus {
+    outline: none;
+    border-bottom: solid #cf2e2e 2px;
+}
+
+form button {
+    padding: 1em;
+    margin-top: 1rem;
+    background-color: transparent;
+    border: #cf2e2e solid 1px;
+    font-size: 1rem;
+    color: #cf2e2e;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #cf2e2e;
+    color: white;
+}
+
+.map {
+    display: flex;
+    flex-direction: column;
+   align-items: flex-end;
+   font-size: 1.2rem;
+}
+
+.map > *:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.map a {
+    color: #cf2e2e;
+}
+
+.map a:hover {
+    text-decoration: none;
+}
+
+
+
+/* Mobile */
+
+@media screen and (max-width: 600px) {
+
+    .contact-section {
+        flex-direction: column;
+        padding: 1rem;
+        margin: 0;
+        gap: 1rem;
+
+    }
+    .contact-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+
+    form button {
+        width: 100%;
+    }
+
+    .map {
+        align-items: center;
+    }
+
+    .map p {
+        display: none;
+    }
+
+
+}

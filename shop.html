@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../src/main.css">
+  <link rel="stylesheet" href="../src/hero.css">
+  <link rel="stylesheet" href="../src/shop.css">
+
+  <!-- Scripts -->
+  <script src="https://kit.fontawesome.com/cb16d461ff.js" crossorigin="anonymous"></script>
+  <script src="src/index.js" defer></script>
+  <script src="src/search.js" defer></script>
+  <script src="src/modal.js" defer></script>
+
+  <title>Our Wines</title>
+</head>
+
+
+<body>
+  <div id="loader">
+
+  </div>
+
+  <div id="content">
+
+    <nav id="hidden-nav">
+
+      <div class="nav-links">
+        <a href="index.html">HOME</a>
+        <a href="history.html">OUR HISTORY</a>
+        <a href="shop.html">SHOP</a>
+      </div>
+
+    </nav>
+
+    <header>
+
+      <div class="menu-icons">
+        <img class="hamburger-button" src="../images/icons/icons8-menu.svg" onclick="openNav()" alt="">
+
+        <img class="close-button" src="../images/icons/icons8-close.svg" onclick="closeNav()" alt="">
+      </div>
+
+      <a href="index.html" class="brand-logo"><img src="../images/the-good-winery-logo.png" alt=""></a>
+
+      <div class="cart-div">
+        <a href="cart.html">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span>0</span>
+        </a>
+      </div>
+    </header>
+
+    <section class="header-section">
+      <div class="search-bar">
+        <form action="" onsubmit="return false">
+          <input type="text" id="search" placeholder="Search">
+          <button type="submit" id="search-button">
+            <img src="../images/icons/icons8-search.svg" alt="">
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="filter-heading">
+        <div>
+          <a href="index.html">HOME</a><span> / </span><span id="page-identifier">ALL WINES</span>
+        </div>
+
+        <h1 id="page-title">All Wines</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore nihil odio autem vero eos, laboriosam
+          odit dicta laudantium commodi debitis nisi? Modi voluptatem delectus laudantium nihil odio praesentium
+          sunt distinctio.</p>
+      </div>
+
+      <div class="filter-wrapper">
+
+        <a href="#" class="filter-link filter-link--active" data-filter="all">All Wines</a>
+        <a href="#" class="filter-link" data-filter="popular">Popular</a>
+        <a href="#" class="filter-link" data-filter="red">Red Wines</a>
+        <a href="#" class="filter-link" data-filter="white">White Wines</a>
+        <a href="#" class="filter-link" data-filter="rose">Rosé</a>
+        <a href="#" class="filter-link" data-filter="sparkling">Sparkling Wines</a>
+
+      </div>
+
+      <div class="shop-grid">
+        <div class="product-card red popular gerard bertrand art de vivre rouge">
+          <div class="product-card-image">
+            <img src="../images/products/art-de-vivre-languedoc-2016-vin-rouge-red-blend.png" alt="">
+          </div>
+          <div class="product-card-info">
+
+            <h3>Gerard Bertrand Art de Vivre Rouge</h3>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, fugit
+              consectetur.</span>
+            <p>$65</p>
+            <button id="add-to-cart">ADD TO CART</button>
+          </div>
+        </div>
+
+        <div class="product-card red popular thomas barton reserve bordeaux">
+          <div class="product-card-image">
+            <img src="../images/products/barton-guestier-thomas-barton-reserve-bordeaux-france.png" alt="">
+          </div>
+          <div class="product-card-info">
+
+            <h3>Thomas Barton Reserve Bordeaux</h3>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, fugit
+              consectetur.</span>
+            <p>$65</p>
+            <button id="add-to-cart">ADD TO CART</button>
+          </div>
+        </div>
+
+        <div class="product-card rose b&g cuvee reserve speciale">
+          <div class="product-card-image">
+            <img src="../images/products/bg-cuvee.png" alt="">
+          </div>
+          <div class="product-card-info">
+
+            <h3>B&G Cuvee Reserve Speciale Rose</h3>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, fugit
+              consectetur.</span>
+            <p>$65</p>
+            <button id="add-to-cart">ADD TO CART</button>
+          </div>
+        </div>
+
+        <div class="product-card white billecart salmon brut blanc de">
+          <div class="product-card-image">
+            <img src="../images/products/billecart-salmon-blanc-de-blancs.png" alt="">
+          </div>
+          <div class="product-card-info">
+
+            <h3>Billecart Salmon Brut Blanc de Blanc</h3>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, fugit
+              consectetur.</span>
+            <p>$65</p>
+            <button id="add-to-cart">ADD TO CART</button>
+          </div>
+        </div>
+
+        <div class="product-card rose popular billecart salmon brut">
+          <div class="product-card-image">
+            <img src="../images/products/Billecart-Salmon-Brut-Rose.png" alt="">
+          </div>
+          <div class="product-card-info">
+
+            <h3>Billecart Salmon Brut Rose</h3>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, fugit
+              consectetur.</span>
+            <p>$65</p>
+            <button id="add-to-cart">ADD TO CART</button>
+          </div>
+        </div>
+
+        <div class="product-card sparkling billecart salmon brut reserve">
+          <div class="product-card-image">
+            <img src="../images/products/billecart-salmon-reserve.png" alt="">
+          </div>
+          <div class="product-card-info">
+
+            <h3>Billecart Salmon Brut Reserve</h3>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, fugit
+              consectetur.</span>
+            <p>$65</p>
+            <button id="add-to-cart">ADD TO CART</button>
+          </div>
+        </div>
+
+        <div class="product-card red popular maison castel cabernet sauvignon">
+          <div class="product-card-image">
+            <img src="../images/products/cabernet-sauvignon-IGP-pays-d-oc.png" alt="">
+          </div>
+          <div class="product-card-info">
+
+            <h3>Maison Castel Cabernet Sauvignon</h3>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, fugit
+              consectetur.</span>
+            <p>$65</p>
+            <button id="add-to-cart">ADD TO CART</button>
+          </div>
+        </div>
+
+        <div class="product-card white popular b&g reserve chardonnay">
+          <div class="product-card-image">
+            <img src="../images/products/Chardonnay.png" alt="">
+          </div>
+          <div class="product-card-info">
+
+            <h3>B&G Reserve Chardonnay</h3>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, fugit
+              consectetur.</span>
+            <p>$65</p>
+            <button id="add-to-cart">ADD TO CART</button>
+          </div>
+        </div>
+
+        <div class="product-card red chateauneuf du pape">
+          <div class="product-card-image">
+            <img src="../images/products/chateauneuf_du_pape.png" alt="">
+          </div>
+          <div class="product-card-info">
+
+            <h3>Chateauneuf Du Pape Red</h3>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, fugit
+              consectetur.</span>
+            <p>$65</p>
+            <button id="add-to-cart">ADD TO CART</button>
+          </div>
+        </div>
+
+        <div class="product-card red clarendelle bordeaux rouge">
+          <div class="product-card-image">
+            <img src="../images/products/clarendelle-red-half-bottle.png" alt="">
+          </div>
+          <div class="product-card-info">
+
+            <h3>Clarendelle Bordeaux Rouge</h3>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, fugit
+              consectetur.</span>
+            <p>$65</p>
+            <button id="add-to-cart">ADD TO CART</button>
+          </div>
+        </div>
+
+        <div class="product-card rose popular clarendelle bordeaux">
+          <div class="product-card-image">
+            <img src="../images/products/clarendelle-rose.png" alt="">
+          </div>
+          <div class="product-card-info">
+
+            <h3>Clarendelle Bordeaux Rose</h3>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, fugit
+              consectetur.</span>
+            <p>$65</p>
+            <button id="add-to-cart">ADD TO CART</button>
+          </div>
+        </div>
+
+        <div class="product-card white clarendelle bordeaux blanc">
+          <div class="product-card-image">
+            <img src="../images/products/clarendelle-white.png" alt="">
+          </div>
+          <div class="product-card-info">
+
+            <h3>Clarendelle Bordeaux Blanc</h3>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, fugit
+              consectetur.</span>
+            <p>$65</p>
+            <button id="add-to-cart">ADD TO CART</button>
+          </div>
+        </div>
+
+        <div class="product-card rose gerard bertrand cote des roses">
+          <div class="product-card-image">
+            <img src="../images/products/Cote-de-Roses-Rose-450x450.png" alt="">
+          </div>
+          <div class="product-card-info">
+
+            <h3>Gerard Bertrand Cote des Roses Rose</h3>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, fugit
+              consectetur.</span>
+            <p>$65</p>
+            <button id="add-to-cart">ADD TO CART</button>
+          </div>
+        </div>
+
+        <div class="product-card white gerard bertrand cote des roses chardonnay">
+          <div class="product-card-image">
+            <img src="../images/products/Cote-des-Roses---Chardonnay-75.png" alt="">
+          </div>
+          <div class="product-card-info">
+
+            <h3>Gerard Bertrand Cote des Roses Chardonnay</h3>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, fugit
+              consectetur.</span>
+            <p>$65</p>
+            <button id="add-to-cart">ADD TO CART</button>
+          </div>
+        </div>
+
+        <div class="product-card sparkling dom perignon brut">
+          <div class="product-card-image">
+            <img src="../images/products/dom-perignon-vintage-case.png" alt="">
+          </div>
+          <div class="product-card-info">
+
+            <h3>Dom Perignon Brut</h3>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, fugit
+              consectetur.</span>
+            <p>$65</p>
+            <button id="add-to-cart">ADD TO CART</button>
+          </div>
+        </div>
+
+        <div class="product-card red gerard bertrand cote des roses pinot noir">
+          <div class="product-card-image">
+            <img src="../images/products/Gerard Bertrand Cote des Roses Pinot Noir.png" alt="">
+          </div>
+          <div class="product-card-info">
+
+            <h3>Gerard Bertrand Cote des Roses Pinot Noir</h3>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, fugit
+              consectetur.</span>
+            <p>$65</p>
+            <button id="add-to-cart">ADD TO CART</button>
+          </div>
+        </div>
+
+        <div class="product-card white popular maison castel gewurztraminer 2020">
+          <div class="product-card-image">
+            <img src="../images/products/gewurztraminer.png" alt="">
+          </div>
+          <div class="product-card-info">
+
+            <h3>Maison Castel Gewurztraminer 2020</h3>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, fugit
+              consectetur.</span>
+            <p>$65</p>
+            <button id="add-to-cart">ADD TO CART</button>
+          </div>
+        </div>
+
+        <div class="product-card white haute couture french bubbles blanc">
+          <div class="product-card-image">
+            <img src="../images/products/haute_couture_blanc.png" alt="">
+          </div>
+          <div class="product-card-info">
+
+            <h3>Haute Couture French Bubbles Blanc</h3>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, fugit
+              consectetur.</span>
+            <p>$65</p>
+            <button id="add-to-cart">ADD TO CART</button>
+          </div>
+        </div>
+
+        <div class="product-card rose haute couture french bubbles">
+          <div class="product-card-image">
+            <img src="../images/products/haute_couture_rose.png" alt="">
+          </div>
+          <div class="product-card-info">
+
+            <h3>Haute Couture French Bubbles Rose</h3>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, fugit
+              consectetur.</span>
+            <p>$65</p>
+            <button id="add-to-cart">ADD TO CART</button>
+          </div>
+        </div>
+
+        <div class="product-card sparkling martini asti">
+          <div class="product-card-image">
+            <img src="../images/products/Large_3000_PNG-FY21_AT_Martini_Asti_75cl.png" alt="">
+          </div>
+          <div class="product-card-info">
+
+            <h3>MARTINI Asti Sparkling Wine</h3>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, fugit
+              consectetur.</span>
+            <p>$65</p>
+            <button id="add-to-cart">ADD TO CART</button>
+          </div>
+        </div>
+
+        <div class="product-card sparkling martini prosecco">
+          <div class="product-card-image">
+            <img src="../images/products/Martini-Prosecco-Bottle-Shot.png" alt="">
+          </div>
+          <div class="product-card-info">
+
+            <h3>Martini Prosecco</h3>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, fugit
+              consectetur.</span>
+            <p>$65</p>
+            <button id="add-to-cart">ADD TO CART</button>
+          </div>
+        </div>
+
+        <div class="product-card sparkling popular martini brut">
+          <div class="product-card-image">
+            <img src="../images/products/martini_Brut.png" alt="">
+          </div>
+          <div class="product-card-info">
+
+            <h3>MARTINI Brut</h3>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, fugit
+              consectetur.</span>
+            <p>$65</p>
+            <button id="add-to-cart">ADD TO CART</button>
+          </div>
+        </div>
+
+        <div class="product-card rose moet chandon imperial">
+          <div class="product-card-image">
+            <img src="../images/products/MOET.png" alt="">
+          </div>
+          <div class="product-card-info">
+
+            <h3>Moet & Chandon Rose Imperial</h3>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, fugit
+              consectetur.</span>
+            <p>$65</p>
+            <button id="add-to-cart">ADD TO CART</button>
+          </div>
+        </div>
+
+        <div class="product-card rose moet chandon imperial nectar">
+          <div class="product-card-image">
+            <img src="../images/products/MoetChandon-NectarImperialRose.png" alt="">
+          </div>
+          <div class="product-card-info">
+
+            <h3>Moet & Chandon Nectar Rose Imperial </h3>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, fugit
+              consectetur.</span>
+            <p>$65</p>
+            <button id="add-to-cart">ADD TO CART</button>
+          </div>
+        </div>
+
+        <div class="product-card rose robertson winery natural sweet">
+          <div class="product-card-image">
+            <img src="../images/products/Robertson_NS_Rose.png" alt="">
+          </div>
+          <div class="product-card-info">
+
+            <h3>Robertson Winery Natural Sweet Rose</h3>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, fugit
+              consectetur.</span>
+            <p>$65</p>
+            <button id="add-to-cart">ADD TO CART</button>
+          </div>
+        </div>
+
+        <div class="product-card white roche mazet sauvignon blanc">
+          <div class="product-card-image">
+            <img src="../images/products/roche_mazet_sauvignon_blanc.png" alt="">
+          </div>
+          <div class="product-card-info">
+
+            <h3>Roche Mazet Sauvignon Blanc</h3>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, fugit
+              consectetur.</span>
+            <p>$65</p>
+            <button id="add-to-cart">ADD TO CART</button>
+          </div>
+        </div>
+
+        <div class="product-card red roche mazet merlot">
+          <div class="product-card-image">
+            <img src="../images/products/RWchapelRedNV1.png" alt="">
+          </div>
+          <div class="product-card-info">
+
+            <h3>Roche Mazet Merlot</h3>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, fugit
+              consectetur.</span>
+            <p>$65</p>
+            <button id="add-to-cart">ADD TO CART</button>
+          </div>
+        </div>
+
+        <div class="product-card white santa cristina umbria">
+          <div class="product-card-image">
+            <img src="../images/products/santa-cristina-umbria-bianco.png" alt="">
+          </div>
+          <div class="product-card-info">
+
+            <h3>Santa Cristina Umbria</h3>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, fugit
+              consectetur.</span>
+            <p>$65</p>
+            <button id="add-to-cart">ADD TO CART</button>
+          </div>
+        </div>
+
+        <div class="product-card white popular maison castel sauvignon blanc 2020">
+          <div class="product-card-image">
+            <img src="../images/products/sauvignon-blanc-IGP-cotes-de-gascogne.png" alt="">
+          </div>
+          <div class="product-card-info">
+
+            <h3>Maison Castel Sauvignon Blanc 2020</h3>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, fugit
+              consectetur.</span>
+            <p>$65</p>
+            <button id="add-to-cart">ADD TO CART</button>
+          </div>
+        </div>
+
+        <div class="product-card red the chocolate block">
+          <div class="product-card-image">
+            <img src="../images/products/the_chocolate_block.png" alt="">
+          </div>
+          <div class="product-card-info">
+
+            <h3>The Chocolate Block</h3>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, fugit
+              consectetur.</span>
+            <p>$65</p>
+            <button id="add-to-cart">ADD TO CART</button>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- Modal -->
+      <div id="modal">
+        <p>XYZ Product was successfully added to cart</p>
+        <i class="fa-solid fa-times fa-lg close"></i>
+      </div>
+
+    </section>
+
+
+
+    <footer>
+      <div class="footer-content">
+        <div class="logo">
+          <img src="../images/the-good-winery-logo.png" alt="">
+        </div>
+
+        <div class="links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">Our History</a></li>
+            <li><a href="shop.html">Shop</a></li>
+          </ul>
+        </div>
+
+        <div class="social">
+          <ul>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>Copyright &copy; 2022 All rights reserved | Made with <i class="fas fa-heart"></i> by Taladeogo</p>
+      </div>
+    </footer>
+  </div>
+
+
+</body>
+
+</html>

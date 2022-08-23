@@ -1,0 +1,211 @@
+// Creating an array to store all the data for the store
+
+export const productInfo = [
+    {
+        id: 1,
+        name: 'Gerard Bertrand Art de Vivre Rouge',
+        price: '$100',
+        image: '../images/products/art-de-vivre-languedoc-2016-vin-rouge-red-blend.png',
+        noInCart: 0
+    },
+    {
+        id: 2,
+        name: 'Thomas Barton Reserve Bordeaux',
+        price: '$65',
+        image: '../images/products/barton-guestier-thomas-barton-reserve-bordeaux-france.png',
+        noInCart: 0
+    },
+    {
+        id: 3,
+        name: 'B&G Cuvee Reserve Speciale Rose',
+        price: '$65',
+        image: '../images/products/bg-cuvee.png',
+        noInCart: 0
+    },
+    {
+        id: 4,
+        name: 'Billecart Salmon Brut Blanc de Blanc',
+        price: '$65',
+        image: '../images/products/billecart-salmon-blanc-de-blancs.png',
+        noInCart: 0
+    },
+    {
+        id: 5,
+        name: 'Billecart Salmon Brut Rose',
+        price: '$65',
+        image: '../images/products/Billecart-Salmon-Brut-Rose.png',
+        noInCart: 0
+    },
+    {
+        id: 6,
+        name: 'Billecart Salmon Brut Reserve',
+        price: '$65',
+        image: '../images/products/billecart-salmon-reserve.png'
+    },
+    {
+        id: 7,
+        name: 'Maison Castel Cabernet Sauvignon',
+        price: '$65',
+        image: '../images/products/cabernet-sauvignon-IGP-pays-d-oc.png'
+    },
+    {
+        id: 8,
+        name: 'B&G Reserve Chardonnay',
+        price: '$65',
+        image: '../images/products/Chardonnay.png'
+    },
+    {
+        id: 9,
+        name: 'Chateauneuf Du Pape Red',
+        price: '$65',
+        image: '../images/products/chateauneuf_du_pape.png'
+    },
+    {
+        id: 10,
+        name: 'Clarendelle Bordeaux Rouge',
+        price: '$65',
+        image: '../images/products/clarendelle-red-half-bottle.png',
+        noInCart: 0
+    },
+    {
+        id: 11,
+        name: 'Clarendelle Bordeaux Rose',
+        price: '$65',
+        image: '../images/products/clarendelle-rose.png',
+        noInCart: 0
+    },
+    {
+        id: 12,
+        name: 'Clarendelle Bordeaux Blanc',
+        price: '$65',
+        image: '../images/products/clarendelle-white.png',
+        noInCart: 0
+    },
+    {
+        id: 13,
+        name: 'Gerard Bertrand Cote des Roses Rose',
+        price: '$65',
+        image: '../images/products/Cote-de-Roses-Rose-450x450.png',
+        noInCart: 0
+    },
+    {
+        id: 14,
+        name: 'Gerard Bertrand Cote des Roses Chardonnay',
+        price: '$65',
+        image: '../images/products/Cote-des-Roses---Chardonnay-75.png',
+        noInCart: 0 
+    },
+    {
+        id: 15,
+        name: 'Dom Perignon Brut',
+        price: '$65',
+        image: '../images/products/dom-perignon-vintage-case.png',
+        noInCart: 0
+    },
+    {
+        id: 16,
+        name: 'Gerard Bertrand Cote des Roses Pinot Noir',
+        price: '$65',
+        image: '../images/products/Gerard Bertrand Cote des Roses Pinot Noir.png',
+        noInCart: 0
+    },
+    {
+        id: 17,
+        name: 'Maison Castel Gewurztraminer 2020',
+        price: '$65',
+        image: '../images/products/gewurztraminer.png',
+        noInCart: 0
+    },
+    {
+        id: 18,
+        name: 'Haute Couture French Bubbles Blanc',
+        price: '$65',
+        image: '../images/products/haute_couture_blanc.png',
+        noInCart: 0
+    },
+    {
+        id: 19,
+        name: 'Haute Couture French Bubbles Rose',
+        price: '$65',
+        image: '../images/products/haute_couture_rose.png',
+        noInCart: 0
+    },
+    {
+        id: 20,
+        name: 'MARTINI Asti Sparkling Wine',
+        price: '$65',
+        image: '../images/products/Large_3000_PNG-FY21_AT_Martini_Asti_75cl.png',
+        noInCart: 0
+    },
+    {
+        id: 21,
+        name: 'Martini Prosecco',
+        price: '$65',
+        image: '../images/products/Martini-Prosecco-Bottle-Shot.png',
+        noInCart: 0
+    },
+    {
+        id: 22,
+        name: 'MARTINI Brut',
+        price: '$65',
+        image: '../images/products/martini_Brut.png',
+        noInCart: 0
+    },
+    {
+        id: 23,
+        name: 'Moet & Chandon Rose Imperial',
+        price: '$65',
+        image: '../images/products/MOET.png',
+        noInCart: 0
+    },
+    {
+        id: 24,
+        name: 'Moet & Chandon Nectar Rose Imperial',
+        price: '$65',
+        image: '../images/products/MoetChandon-NectarImperialRose.png',
+        noInCart: 0
+    },
+    {
+        id: 25,
+        name: 'Robertson Winery Natural Sweet Rose',
+        price: '$65',
+        image: '../images/products/Robertson_NS_Rose.png',
+        noInCart: 0
+    },
+    {
+        id: 26,
+        name: 'Roche Mazet Sauvignon Blanc',
+        price: '$65',
+        image: '../images/products/roche_mazet_sauvignon_blanc.png',
+        noInCart: 0
+    },
+    {
+        id: 27,
+        name: 'Roche Mazet Merlot',
+        price: '$65',
+        image: '../images/products/RWchapelRedNV1.png',
+        noInCart: 0
+    },
+    {
+        id: 28,
+        name: 'Santa Cristina Umbria',
+        price: '$65',
+        image: '../images/products/santa-cristina-umbria-bianco.png',
+        noInCart: 0
+    },
+    {
+        id: 29,
+        name: 'Maison Castel Sauvignon Blanc 2020',
+        price: '$65',
+        image: '../images/products/sauvignon-blanc-IGP-cotes-de-gascogne.png',
+        noInCart: 0
+    },
+    {
+        id: 30,
+        name: 'The Chocolate Block',
+        price: '$65',
+        image: '../images/products/the_chocolate_block.png',
+        noInCart: 0
+    }
+
+]
